@@ -9,6 +9,24 @@
 {% endblock %}
 {% block content %}
 <div class="container">
+    <!-- Menú de Categorías -->
+    <div class="row mb-4">
+        <div class="col">
+            <div class="list-group list-group-horizontal-md">
+                <a href="{% url 'galeria' %}" class="list-group-item list-group-item-action {% if not categoria_actual %}active{% endif %}">
+                    Todos los Animes
+                </a>
+                {% for cat in categorias %}
+                <a href="{% url 'galeria_categoria' cat.id %}" 
+                   class="list-group-item list-group-item-action {% if categoria_actual.id == cat.id %}active{% endif %}">
+                    {{ cat.nombre }}
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido existente de la galería -->
     <div class="row">
         {% for galeria in page_obj %}
         <div class="col">
@@ -23,7 +41,7 @@
                         <div class="card-body">
                             <h5 class="card-title fs-6">{{ galeria.title }}</h5>
                             <p class="card-text small">{{ galeria.description }}</p>
-                            
+                            <a href="{% url 'personajes' galeria.id %}" class="btn btn-primary btn-sm">Ver Personajes</a>
                         </div>
                     </div>
                 </div>

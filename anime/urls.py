@@ -18,6 +18,7 @@ from django.urls import path
 from core import views
 from gallery import views as views_g
 from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,9 +26,10 @@ urlpatterns = [
     path('clasicos/', views.clasicos, name='clasicos'),
     path('actuales/', views.actuales, name='actuales'),
     path('gallery/', views_g.galeria, name='galeria'),
+    path('gallery/categoria/<int:categoria_id>/', views_g.categoria, name='galeria_categoria'),
+    path('gallery/personajes/<int:galeria_id>/', views_g.personajes, name='personajes'),
 ]
 
 if settings.DEBUG:
-    from django.conf.urls.static import static
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
