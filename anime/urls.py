@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from core import views
 from gallery import views as views_g
 from django.conf import settings
@@ -28,6 +28,8 @@ urlpatterns = [
     path('gallery/', views_g.galeria, name='galeria'),
     path('gallery/categoria/<int:categoria_id>/', views_g.categoria, name='galeria_categoria'),
     path('gallery/personajes/<int:galeria_id>/', views_g.personajes, name='personajes'),
+    path('register/', views.register, name='register'),
+    path('accounts/', include('django.contrib.auth.urls')),  # Incluye las URLs de autenticación
 ]
 
 if settings.DEBUG:
