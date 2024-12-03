@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block banner-img %}
+{% static 'core/img/shonen-clasicos.jpg' %}
+{% endblock %}
+{% block banner-txt %}
+<h1>Animes Clasicos</h1>
+<span class="subheading">Un recorrido por la historia de los grandes clasicos</span>
+{% endblock %}
+{% block content %}
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>Los animes clásicos representan los cimientos fundamentales de la animación japonesa, marcando el camino para las generaciones futuras y estableciendo los estándares que conocemos hoy. Desde la década de los 60 hasta los 90, estas obras maestras no solo revolucionaron la forma de contar historias a través de la animación, sino que también influyeron significativamente en la cultura popular global.</p>
+                        
+                        <p>Series legendarias como "Astro Boy" (1963) de Osamu Tezuka, considerado el "Dios del Manga", abrieron el camino para la industria del anime. Durante los años 70, obras como "Mazinger Z" y "Space Battleship Yamato" establecieron las bases del género mecha y la ciencia ficción espacial.</p>
+                        <div class="row">
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <img src="{% static 'core/img/astroboy.jpg' %}" alt="Astroboy" class="img-fluid" style="width: 250px; height: 300px;">
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <img src="{% static 'core/img/mazinger.jpg' %}" alt="Gundam" class="img-fluid" style="width: 250px; height: 300px;">
+                            </div>
+                        </div>
+                        <p>Entre todos los clásicos, Dragon Ball destaca como uno de los pilares más influyentes del anime. Creada por Akira Toriyama en 1984, esta serie revolucionó el género shounen y se convirtió en un fenómeno global. La historia de Son Goku, desde su infancia hasta convertirse en el guerrero más poderoso del universo, cautivó a audiencias de todas las edades. Dragon Ball estableció elementos que se convertirían en estándares del género: las transformaciones de poder, los torneos de artes marciales, la progresión del protagonista, y las batallas épicas que definen el destino del mundo. Su influencia es tan profunda que prácticamente todo anime shounen moderno tiene elementos que pueden rastrearse hasta Dragon Ball.</p>
+                        
+                        <p>Los años 80 también vieron el surgimiento de otras obras revolucionarias como "Saint Seiya" y "Mobile Suit Gundam", que junto con Dragon Ball expandieron los límites de la narrativa en la animación. La década de los 90 fue particularmente significativa con obras maestras como "Neon Genesis Evangelion", que redefinió el género mecha con una profunda exploración psicológica, y "Sailor Moon", que revolucionó el género magical girl. Estas series, junto con "Rurouni Kenshin", "Yu Yu Hakusho" y "Slam Dunk", no solo cautivaron a audiencias en Japón, sino que fueron fundamentales para la globalización del anime.</p>
+
+                        <p>Lo que hace verdaderamente especiales a estos clásicos es su capacidad para mantenerse relevantes a través del tiempo. Sus temas universales, personajes memorables y narrativas innovadoras continúan resonando con nuevas generaciones de espectadores. El legado de series como Dragon Ball sigue vivo no solo en sus secuelas directas como Dragon Ball Super, sino en la influencia que ejercen sobre nuevas generaciones de creadores y fans del anime.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+{% endblock %}

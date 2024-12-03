@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block banner-img %}
+{% static 'core/img/shonen-actuales.jpg' %}
+{% endblock %}
+{% block banner-txt %}
+<h1>Animes mas influyentes en los ultimos años</h1>
+<h2 class="subheading">Aqui te hablaremos de como influye en la cultura popular los siguientes animes</h2>
+{% endblock %}
+{% block content %}
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>En los últimos años, animes como *Attack on Titan*, *Demon Slayer*, y *Jujutsu Kaisen* han redefinido el género shonen, aportando historias profundas y temas oscuros que capturan tanto a nuevas generaciones como a los fanáticos veteranos.</p>
+                        <p>Estos animes no solo presentan batallas épicas, sino que exploran temas como la supervivencia, el sacrificio y la moralidad en un mundo caótico. Las narrativas se vuelven cada vez más complejas, logrando conectar con audiencias alrededor del mundo y dando visibilidad a la cultura japonesa en el escenario global.</p>
+                        <p>La animación también ha evolucionado, con estudios como Ufotable y MAPPA empujando los límites de lo que se puede lograr visualmente. La combinación de técnicas de animación tradicionales con efectos digitales crea experiencias visuales que impactan y elevan el estándar de calidad en la industria.</p>
+                        <h2 class="section-heading">El impacto de los animes en la cultura global</h2>
+                        <p>Series como *My Hero Academia* y *Chainsaw Man* han influido enormemente en la cultura popular. Su impacto se puede ver en convenciones, redes sociales, y el estilo de vida de los jóvenes, quienes encuentran en estos personajes y sus historias una fuente de inspiración y una representación de sus propias luchas.</p>
+                        <blockquote class="blockquote">"Los sueños de ayer son las realidades de hoy. Los animes no solo cuentan historias; también reflejan los valores y desafíos de la sociedad actual."</blockquote>
+                        <p>Estos animes han logrado trascender fronteras y convertirse en fenómenos culturales, llegando a influir en la moda, la música, e incluso el diseño gráfico en productos y publicidad.</p>
+                        <h2 class="section-heading">El futuro del anime</h2>
+                        <p>Con el crecimiento de plataformas de streaming, el anime está más accesible que nunca, permitiendo que nuevos títulos y géneros lleguen a audiencias masivas. Esto no solo aumenta el alcance del anime, sino que también fomenta la creación de contenido innovador que define una nueva era en la animación japonesa.</p>
+                        <a href="#!"><img class="img-fluid" src="{% static 'core/img/shonen-sample-image.jpg' %}" alt="..." /></a>
+                        <span class="caption text-muted">Algunos de los animes más populares de esta generación redefinen el significado de ser un héroe.</span>
+                        <p>Así, el anime continúa avanzando, capturando nuevos públicos y profundizando en temas más maduros y complejos, demostrando que este género sigue siendo una forma de expresión artística vibrante y en constante evolución.</p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        {% endblock %}
